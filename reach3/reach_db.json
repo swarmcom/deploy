@@ -1,0 +1,1454 @@
+[
+  {
+    "uris" : [
+      
+    ],
+    "uri" : "agent1_pstn",
+    "tag_group_id" : "undefined",
+    "suspend_time" : "undefined",
+    "skills" : {
+      
+    },
+    "role_id" : 3,
+    "role" : {
+      "ui" : "admin",
+      "record" : "role",
+      "name" : "Admin",
+      "id" : 3,
+      "domain_id" : 1,
+      "domain" : {
+        "record" : "domain",
+        "name" : "docker.ezuce.com",
+        "id" : 1,
+        "description" : "undefined"
+      },
+      "description" : "undefined"
+    },
+    "ring_timeout" : "undefined",
+    "reset_rings_fails" : false,
+    "release_group_id" : "undefined",
+    "release_group" : {
+      
+    },
+    "record" : "agent",
+    "persistent" : false,
+    "permissions" : {
+      
+    },
+    "password" : "1234",
+    "name" : "agent1",
+    "max_ring_fails" : "undefined",
+    "login" : "agent1",
+    "lines" : [
+      
+    ],
+    "line_id" : "undefined",
+    "line" : {
+      
+    },
+    "id" : 1,
+    "group_id" : 1,
+    "group" : {
+      "tag_group_id" : "undefined",
+      "suspend_time" : "undefined",
+      "skills" : {
+        
+      },
+      "role_id" : "undefined",
+      "role" : {
+        
+      },
+      "ring_timeout" : "undefined",
+      "reset_rings_fails" : "undefined",
+      "release_group_id" : "undefined",
+      "release_group" : {
+        
+      },
+      "record" : "agent_group",
+      "permissions" : {
+        
+      },
+      "options" : "undefined",
+      "name" : "Agents",
+      "max_ring_fails" : "undefined",
+      "lines" : [
+        
+      ],
+      "line_id" : "undefined",
+      "line" : {
+        
+      },
+      "id" : 1,
+      "domain_id" : 1,
+      "domain" : {
+        "record" : "domain",
+        "name" : "docker.ezuce.com",
+        "id" : 1,
+        "description" : "undefined"
+      },
+      "autologout" : "undefined"
+    },
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "caller_id_number" : "agent1_number",
+    "avatar" : "undefined",
+    "autologout" : "undefined"
+  },
+  {
+    "uris" : [
+      
+    ],
+    "uri" : "agent3_pstn",
+    "tag_group_id" : "undefined",
+    "suspend_time" : "undefined",
+    "skills" : {
+      
+    },
+    "role_id" : 1,
+    "role" : {
+      "ui" : "supervisor",
+      "record" : "role",
+      "name" : "Supervisor",
+      "id" : 1,
+      "domain_id" : 1,
+      "domain" : {
+        "record" : "domain",
+        "name" : "docker.ezuce.com",
+        "id" : 1,
+        "description" : "undefined"
+      },
+      "description" : "undefined"
+    },
+    "ring_timeout" : "undefined",
+    "reset_rings_fails" : false,
+    "release_group_id" : "undefined",
+    "release_group" : {
+      
+    },
+    "record" : "agent",
+    "persistent" : false,
+    "permissions" : {
+      
+    },
+    "password" : "1234",
+    "name" : "agent3",
+    "max_ring_fails" : "undefined",
+    "login" : "agent3",
+    "lines" : [
+      
+    ],
+    "line_id" : "undefined",
+    "line" : {
+      
+    },
+    "id" : 3,
+    "group_id" : 1,
+    "group" : {
+      "tag_group_id" : "undefined",
+      "suspend_time" : "undefined",
+      "skills" : {
+        
+      },
+      "role_id" : "undefined",
+      "role" : {
+        
+      },
+      "ring_timeout" : "undefined",
+      "reset_rings_fails" : "undefined",
+      "release_group_id" : "undefined",
+      "release_group" : {
+        
+      },
+      "record" : "agent_group",
+      "permissions" : {
+        
+      },
+      "options" : "undefined",
+      "name" : "Agents",
+      "max_ring_fails" : "undefined",
+      "lines" : [
+        
+      ],
+      "line_id" : "undefined",
+      "line" : {
+        
+      },
+      "id" : 1,
+      "domain_id" : 1,
+      "domain" : {
+        "record" : "domain",
+        "name" : "docker.ezuce.com",
+        "id" : 1,
+        "description" : "undefined"
+      },
+      "autologout" : "undefined"
+    },
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "caller_id_number" : "agent3_number",
+    "avatar" : "undefined",
+    "autologout" : "undefined"
+  },
+  {
+    "uris" : [
+      
+    ],
+    "uri" : "agent4_pstn",
+    "tag_group_id" : "undefined",
+    "suspend_time" : "undefined",
+    "skills" : {
+      
+    },
+    "role_id" : "undefined",
+    "role" : {
+      
+    },
+    "ring_timeout" : "undefined",
+    "reset_rings_fails" : false,
+    "release_group_id" : "undefined",
+    "release_group" : {
+      
+    },
+    "record" : "agent",
+    "persistent" : false,
+    "permissions" : {
+      
+    },
+    "password" : "1234",
+    "name" : "agent4",
+    "max_ring_fails" : "undefined",
+    "login" : "agent4",
+    "lines" : [
+      
+    ],
+    "line_id" : "undefined",
+    "line" : {
+      
+    },
+    "id" : 4,
+    "group_id" : "undefined",
+    "group" : {
+      
+    },
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "caller_id_number" : "agent4_number",
+    "avatar" : "undefined",
+    "autologout" : "undefined"
+  },
+  {
+    "uris" : [
+      
+    ],
+    "uri" : "agent2_pstn",
+    "tag_group_id" : "undefined",
+    "suspend_time" : "undefined",
+    "skills" : {
+      
+    },
+    "role_id" : 2,
+    "role" : {
+      "ui" : "agent",
+      "record" : "role",
+      "name" : "Agent",
+      "id" : 2,
+      "domain_id" : 1,
+      "domain" : {
+        "record" : "domain",
+        "name" : "docker.ezuce.com",
+        "id" : 1,
+        "description" : "undefined"
+      },
+      "description" : "undefined"
+    },
+    "ring_timeout" : "undefined",
+    "reset_rings_fails" : false,
+    "release_group_id" : "undefined",
+    "release_group" : {
+      
+    },
+    "record" : "agent",
+    "persistent" : false,
+    "permissions" : {
+      
+    },
+    "password" : "1234",
+    "name" : "agent2",
+    "max_ring_fails" : "undefined",
+    "login" : "agent2",
+    "lines" : [
+      
+    ],
+    "line_id" : "undefined",
+    "line" : {
+      
+    },
+    "id" : 2,
+    "group_id" : 1,
+    "group" : {
+      "tag_group_id" : "undefined",
+      "suspend_time" : "undefined",
+      "skills" : {
+        
+      },
+      "role_id" : "undefined",
+      "role" : {
+        
+      },
+      "ring_timeout" : "undefined",
+      "reset_rings_fails" : "undefined",
+      "release_group_id" : "undefined",
+      "release_group" : {
+        
+      },
+      "record" : "agent_group",
+      "permissions" : {
+        
+      },
+      "options" : "undefined",
+      "name" : "Agents",
+      "max_ring_fails" : "undefined",
+      "lines" : [
+        
+      ],
+      "line_id" : "undefined",
+      "line" : {
+        
+      },
+      "id" : 1,
+      "domain_id" : 1,
+      "domain" : {
+        "record" : "domain",
+        "name" : "docker.ezuce.com",
+        "id" : 1,
+        "description" : "undefined"
+      },
+      "autologout" : "undefined"
+    },
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "caller_id_number" : "agent2_number",
+    "avatar" : "undefined",
+    "autologout" : "undefined"
+  },
+  {
+    "uris" : [
+      
+    ],
+    "uri" : "agent5_pstn",
+    "tag_group_id" : "undefined",
+    "suspend_time" : "undefined",
+    "skills" : {
+      
+    },
+    "role_id" : 3,
+    "role" : {
+      "ui" : "admin",
+      "record" : "role",
+      "name" : "Admin",
+      "id" : 3,
+      "domain_id" : 1,
+      "domain" : {
+        "record" : "domain",
+        "name" : "docker.ezuce.com",
+        "id" : 1,
+        "description" : "undefined"
+      },
+      "description" : "undefined"
+    },
+    "ring_timeout" : "undefined",
+    "reset_rings_fails" : false,
+    "release_group_id" : "undefined",
+    "release_group" : {
+      
+    },
+    "record" : "agent",
+    "persistent" : false,
+    "permissions" : {
+      
+    },
+    "password" : "1234",
+    "name" : "agent5",
+    "max_ring_fails" : "undefined",
+    "login" : "agent5",
+    "lines" : [
+      
+    ],
+    "line_id" : "undefined",
+    "line" : {
+      
+    },
+    "id" : 5,
+    "group_id" : "undefined",
+    "group" : {
+      
+    },
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "caller_id_number" : "agent5_number",
+    "avatar" : "undefined",
+    "autologout" : "undefined"
+  },
+  {
+    "tag_group_id" : "undefined",
+    "suspend_time" : "undefined",
+    "skills" : {
+      
+    },
+    "role_id" : "undefined",
+    "role" : {
+      
+    },
+    "ring_timeout" : "undefined",
+    "reset_rings_fails" : "undefined",
+    "release_group_id" : "undefined",
+    "release_group" : {
+      
+    },
+    "record" : "agent_group",
+    "permissions" : {
+      
+    },
+    "options" : "undefined",
+    "name" : "Agents",
+    "max_ring_fails" : "undefined",
+    "lines" : [
+      
+    ],
+    "line_id" : "undefined",
+    "line" : {
+      
+    },
+    "id" : 1,
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "autologout" : "undefined"
+  },
+  {
+    "wrapup_timer" : "undefined",
+    "wrapup_enabled" : "undefined",
+    "weight" : 50,
+    "skills" : {
+      
+    },
+    "record" : "queue",
+    "recipe_id" : "undefined",
+    "name" : "transfer_queue",
+    "moh_id" : "undefined",
+    "id" : 1,
+    "group_id" : "undefined",
+    "group" : {
+      
+    },
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "auto_wrapup" : "undefined",
+    "aging_factor" : "undefined"
+  },
+  {
+    "wrapup_timer" : "undefined",
+    "wrapup_enabled" : "undefined",
+    "weight" : 1,
+    "skills" : {
+      
+    },
+    "record" : "queue",
+    "recipe_id" : "undefined",
+    "name" : "default_queue",
+    "moh_id" : "undefined",
+    "id" : 2,
+    "group_id" : "undefined",
+    "group" : {
+      
+    },
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "auto_wrapup" : "undefined",
+    "aging_factor" : "undefined"
+  },
+  {
+    "voicemail_prompt_id" : "undefined",
+    "use_origin_clid_on_external" : "undefined",
+    "uri_lua_id" : "undefined",
+    "skills" : {
+      
+    },
+    "record" : "client",
+    "override_clid_line_out" : "undefined",
+    "override_clid_line_in" : "undefined",
+    "name" : "Client",
+    "moh_id" : "undefined",
+    "id" : 1,
+    "exit_lua_id" : "undefined",
+    "entry_lua_id" : "undefined",
+    "enable_call_recording" : "undefined",
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "disposition_group_id" : "undefined",
+    "disposition_group" : {
+      
+    },
+    "caller_id_number" : "undefined",
+    "caller_id_name" : "undefined",
+    "avatar" : "undefined",
+    "announce_id" : "undefined"
+  },
+  {
+    "value" : 3,
+    "record" : "param",
+    "name" : "admin_role_id",
+    "id" : [
+      1,
+      "admin_role_id"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 1,
+    "record" : "param",
+    "name" : "supervisor_role_id",
+    "id" : [
+      1,
+      "supervisor_role_id"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 1,
+    "record" : "param",
+    "name" : "release_group_id",
+    "id" : [
+      1,
+      "release_group_id"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 1,
+    "record" : "param",
+    "name" : "tag_group_id",
+    "id" : [
+      1,
+      "tag_group_id"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : false,
+    "record" : "param",
+    "name" : "queue_auto_wrapup",
+    "id" : [
+      1,
+      "queue_auto_wrapup"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 600,
+    "record" : "param",
+    "name" : "agent_autologout",
+    "id" : [
+      1,
+      "agent_autologout"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 1,
+    "record" : "param",
+    "name" : "queue_weight",
+    "id" : [
+      1,
+      "queue_weight"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 2,
+    "record" : "param",
+    "name" : "agent_role_id",
+    "id" : [
+      1,
+      "agent_role_id"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : false,
+    "record" : "param",
+    "name" : "agent_reset_rings_fails",
+    "id" : [
+      1,
+      "agent_reset_rings_fails"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : false,
+    "record" : "param",
+    "name" : "requeue_on_disconnect",
+    "id" : [
+      1,
+      "requeue_on_disconnect"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 1.0,
+    "record" : "param",
+    "name" : "queue_aging_factor",
+    "id" : [
+      1,
+      "queue_aging_factor"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 60,
+    "record" : "param",
+    "name" : "agent_grace_period",
+    "id" : [
+      1,
+      "agent_grace_period"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 1,
+    "record" : "param",
+    "name" : "transfer_queue_id",
+    "id" : [
+      1,
+      "transfer_queue_id"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 1,
+    "record" : "param",
+    "name" : "auto_release_id",
+    "id" : [
+      1,
+      "auto_release_id"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 60,
+    "record" : "param",
+    "name" : "agent_ring_timeout",
+    "id" : [
+      1,
+      "agent_ring_timeout"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 5,
+    "record" : "param",
+    "name" : "agent_max_ring_fails",
+    "id" : [
+      1,
+      "agent_max_ring_fails"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : false,
+    "record" : "param",
+    "name" : "queue_wrapup_enabled",
+    "id" : [
+      1,
+      "queue_wrapup_enabled"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 2,
+    "record" : "param",
+    "name" : "default_queue_id",
+    "id" : [
+      1,
+      "default_queue_id"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : 60,
+    "record" : "param",
+    "name" : "queue_wrapup_timer",
+    "id" : [
+      1,
+      "queue_wrapup_timer"
+    ],
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "value" : "http://rr.ezuce:9090",
+    "record" : "instance_param",
+    "name" : "record_server"
+  },
+  {
+    "value" : "/prompts/~s.wav",
+    "record" : "instance_param",
+    "name" : "prompts_template"
+  },
+  {
+    "value" : "/voicemails/~s.wav",
+    "record" : "instance_param",
+    "name" : "voicemail_template"
+  },
+  {
+    "value" : "info",
+    "record" : "instance_param",
+    "name" : "log_level"
+  },
+  {
+    "value" : "masterpass",
+    "record" : "instance_param",
+    "name" : "master_password"
+  },
+  {
+    "value" : "*",
+    "record" : "instance_param",
+    "name" : "voicemail_dtmf_trigger"
+  },
+  {
+    "value" : 60,
+    "record" : "instance_param",
+    "name" : "ws_session_timeout"
+  },
+  {
+    "value" : "shout://rr.ezuce:9091",
+    "record" : "instance_param",
+    "name" : "moh_server"
+  },
+  {
+    "value" : "/moh/~s.mp3",
+    "record" : "instance_param",
+    "name" : "moh_template"
+  },
+  {
+    "value" : "/records/~s.wav",
+    "record" : "instance_param",
+    "name" : "call_record_template"
+  },
+  {
+    "score" : "undefined",
+    "record" : "release",
+    "name" : "Auto",
+    "id" : 1,
+    "group_id" : 1,
+    "description" : "undefined"
+  },
+  {
+    "score" : "undefined",
+    "record" : "release",
+    "name" : "Default",
+    "id" : 2,
+    "group_id" : 1,
+    "description" : "undefined"
+  },
+  {
+    "record" : "release_group",
+    "name" : "System",
+    "id" : 1,
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "description" : "undefined"
+  },
+  {
+    "record" : "dial",
+    "prio" : 1,
+    "match" : ".*",
+    "line_in_id" : 1,
+    "line_in" : {
+      "voicemail_prompt_id" : "undefined",
+      "uri_lua_id" : "undefined",
+      "skills" : {
+        
+      },
+      "record" : "line_in",
+      "queue_id" : 2,
+      "queue" : {
+        "wrapup_timer" : "undefined",
+        "wrapup_enabled" : "undefined",
+        "weight" : 1,
+        "skills" : {
+          
+        },
+        "record" : "queue",
+        "recipe_id" : "undefined",
+        "name" : "default_queue",
+        "moh_id" : "undefined",
+        "id" : 2,
+        "group_id" : "undefined",
+        "group" : {
+          
+        },
+        "domain_id" : 1,
+        "domain" : {
+          "record" : "domain",
+          "name" : "docker.ezuce.com",
+          "id" : 1,
+          "description" : "undefined"
+        },
+        "auto_wrapup" : "undefined",
+        "aging_factor" : "undefined"
+      },
+      "override_clid" : "undefined",
+      "name" : "Line In",
+      "moh_id" : "undefined",
+      "id" : 1,
+      "exit_lua_id" : "undefined",
+      "entry_lua_id" : "undefined",
+      "enable_call_recording" : "undefined",
+      "domain_id" : 1,
+      "domain" : {
+        "record" : "domain",
+        "name" : "docker.ezuce.com",
+        "id" : 1,
+        "description" : "undefined"
+      },
+      "disposition_group_id" : "undefined",
+      "disposition_group" : {
+        
+      },
+      "description" : "undefined",
+      "client_id" : 1,
+      "client" : {
+        "voicemail_prompt_id" : "undefined",
+        "use_origin_clid_on_external" : "undefined",
+        "uri_lua_id" : "undefined",
+        "skills" : {
+          
+        },
+        "record" : "client",
+        "override_clid_line_out" : "undefined",
+        "override_clid_line_in" : "undefined",
+        "name" : "Client",
+        "moh_id" : "undefined",
+        "id" : 1,
+        "exit_lua_id" : "undefined",
+        "entry_lua_id" : "undefined",
+        "enable_call_recording" : "undefined",
+        "domain_id" : 1,
+        "domain" : {
+          "record" : "domain",
+          "name" : "docker.ezuce.com",
+          "id" : 1,
+          "description" : "undefined"
+        },
+        "disposition_group_id" : "undefined",
+        "disposition_group" : {
+          
+        },
+        "caller_id_number" : "undefined",
+        "caller_id_name" : "undefined",
+        "avatar" : "undefined",
+        "announce_id" : "undefined"
+      },
+      "caller_id_number" : "undefined",
+      "caller_id_name" : "undefined",
+      "answer_on_agent" : "undefined",
+      "announce_id" : "undefined",
+      "allow_voicemail" : "undefined"
+    },
+    "id" : 1,
+    "header" : "Caller-Destination-Number",
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    }
+  },
+  {
+    "voicemail_prompt_id" : "undefined",
+    "uri_lua_id" : "undefined",
+    "skills" : {
+      
+    },
+    "record" : "line_in",
+    "queue_id" : 2,
+    "queue" : {
+      "wrapup_timer" : "undefined",
+      "wrapup_enabled" : "undefined",
+      "weight" : 1,
+      "skills" : {
+        
+      },
+      "record" : "queue",
+      "recipe_id" : "undefined",
+      "name" : "default_queue",
+      "moh_id" : "undefined",
+      "id" : 2,
+      "group_id" : "undefined",
+      "group" : {
+        
+      },
+      "domain_id" : 1,
+      "domain" : {
+        "record" : "domain",
+        "name" : "docker.ezuce.com",
+        "id" : 1,
+        "description" : "undefined"
+      },
+      "auto_wrapup" : "undefined",
+      "aging_factor" : "undefined"
+    },
+    "override_clid" : "undefined",
+    "name" : "Line In",
+    "moh_id" : "undefined",
+    "id" : 1,
+    "exit_lua_id" : "undefined",
+    "entry_lua_id" : "undefined",
+    "enable_call_recording" : "undefined",
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "disposition_group_id" : "undefined",
+    "disposition_group" : {
+      
+    },
+    "description" : "undefined",
+    "client_id" : 1,
+    "client" : {
+      "voicemail_prompt_id" : "undefined",
+      "use_origin_clid_on_external" : "undefined",
+      "uri_lua_id" : "undefined",
+      "skills" : {
+        
+      },
+      "record" : "client",
+      "override_clid_line_out" : "undefined",
+      "override_clid_line_in" : "undefined",
+      "name" : "Client",
+      "moh_id" : "undefined",
+      "id" : 1,
+      "exit_lua_id" : "undefined",
+      "entry_lua_id" : "undefined",
+      "enable_call_recording" : "undefined",
+      "domain_id" : 1,
+      "domain" : {
+        "record" : "domain",
+        "name" : "docker.ezuce.com",
+        "id" : 1,
+        "description" : "undefined"
+      },
+      "disposition_group_id" : "undefined",
+      "disposition_group" : {
+        
+      },
+      "caller_id_number" : "undefined",
+      "caller_id_name" : "undefined",
+      "avatar" : "undefined",
+      "announce_id" : "undefined"
+    },
+    "caller_id_number" : "undefined",
+    "caller_id_name" : "undefined",
+    "answer_on_agent" : "undefined",
+    "announce_id" : "undefined",
+    "allow_voicemail" : "undefined"
+  },
+  {
+    "record" : "line_out",
+    "override_clid" : "undefined",
+    "name" : "Client Line Out",
+    "id" : 1,
+    "enable_call_recording" : "undefined",
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "description" : "undefined",
+    "default" : "undefined",
+    "client_id" : 1,
+    "client" : {
+      "voicemail_prompt_id" : "undefined",
+      "use_origin_clid_on_external" : "undefined",
+      "uri_lua_id" : "undefined",
+      "skills" : {
+        
+      },
+      "record" : "client",
+      "override_clid_line_out" : "undefined",
+      "override_clid_line_in" : "undefined",
+      "name" : "Client",
+      "moh_id" : "undefined",
+      "id" : 1,
+      "exit_lua_id" : "undefined",
+      "entry_lua_id" : "undefined",
+      "enable_call_recording" : "undefined",
+      "domain_id" : 1,
+      "domain" : {
+        "record" : "domain",
+        "name" : "docker.ezuce.com",
+        "id" : 1,
+        "description" : "undefined"
+      },
+      "disposition_group_id" : "undefined",
+      "disposition_group" : {
+        
+      },
+      "caller_id_number" : "undefined",
+      "caller_id_name" : "undefined",
+      "avatar" : "undefined",
+      "announce_id" : "undefined"
+    },
+    "caller_id_number" : "undefined",
+    "caller_id_name" : "undefined"
+  },
+  {
+    "ui" : "supervisor",
+    "record" : "role",
+    "name" : "Supervisor",
+    "id" : 1,
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "description" : "undefined"
+  },
+  {
+    "ui" : "admin",
+    "record" : "role",
+    "name" : "Admin",
+    "id" : 3,
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "description" : "undefined"
+  },
+  {
+    "ui" : "agent",
+    "record" : "role",
+    "name" : "Agent",
+    "id" : 2,
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "description" : "undefined"
+  },
+  {
+    "tags" : "undefined",
+    "record" : "tag_group",
+    "name" : "Skills",
+    "id" : 1,
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "description" : "undefined"
+  },
+  {
+    "record" : "id_seq",
+    "name" : "domain",
+    "id" : 1
+  },
+  {
+    "record" : "id_seq",
+    "name" : "dial",
+    "id" : 1
+  },
+  {
+    "record" : "id_seq",
+    "name" : "queue",
+    "id" : 2
+  },
+  {
+    "record" : "id_seq",
+    "name" : "line_out",
+    "id" : 1
+  },
+  {
+    "record" : "id_seq",
+    "name" : "tag_group",
+    "id" : 1
+  },
+  {
+    "record" : "id_seq",
+    "name" : "release",
+    "id" : 2
+  },
+  {
+    "record" : "id_seq",
+    "name" : "node",
+    "id" : 5
+  },
+  {
+    "record" : "id_seq",
+    "name" : "role",
+    "id" : 3
+  },
+  {
+    "record" : "id_seq",
+    "name" : "release_group",
+    "id" : 1
+  },
+  {
+    "record" : "id_seq",
+    "name" : "client",
+    "id" : 1
+  },
+  {
+    "record" : "id_seq",
+    "name" : "agent",
+    "id" : 5
+  },
+  {
+    "record" : "id_seq",
+    "name" : "agent_group",
+    "id" : 1
+  },
+  {
+    "record" : "id_seq",
+    "name" : "dialplan_in",
+    "id" : 6
+  },
+  {
+    "record" : "id_seq",
+    "name" : "line_in",
+    "id" : 1
+  },
+  {
+    "record" : "domain",
+    "name" : "docker.ezuce.com",
+    "id" : 1,
+    "description" : "undefined"
+  },
+  {
+    "type" : "agents",
+    "record" : "node",
+    "props" : "undefined",
+    "name" : "Agents",
+    "ip" : "undefined",
+    "id" : 1,
+    "description" : "undefined",
+    "address" : "undefined"
+  },
+  {
+    "type" : "proxy",
+    "record" : "node",
+    "props" : "undefined",
+    "name" : "Kamailio",
+    "ip" : "172.18.0.5",
+    "id" : 3,
+    "description" : "undefined",
+    "address" : "kamailio.ezuce"
+  },
+  {
+    "type" : "media",
+    "record" : "node",
+    "props" : {
+      "proxy" : 3
+    },
+    "name" : "FreeSWITCH",
+    "ip" : "172.18.0.6",
+    "id" : 4,
+    "description" : "undefined",
+    "address" : "freeswitch.ezuce"
+  },
+  {
+    "type" : "world",
+    "record" : "node",
+    "props" : "undefined",
+    "name" : "World",
+    "ip" : "undefined",
+    "id" : 2,
+    "description" : "undefined",
+    "address" : "undefined"
+  },
+  {
+    "type" : "gateway",
+    "record" : "node",
+    "props" : "undefined",
+    "name" : "Busytone",
+    "ip" : "172.18.0.13",
+    "id" : 5,
+    "description" : "undefined",
+    "address" : "agents.ezuce"
+  },
+  {
+    "target" : 1,
+    "source" : 1,
+    "record" : "dialplan_in",
+    "prio" : 1,
+    "match" : "undefined",
+    "id" : 1,
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "action" : "pass"
+  },
+  {
+    "target" : 1,
+    "source" : 4,
+    "record" : "dialplan_in",
+    "prio" : 3,
+    "match" : "undefined",
+    "id" : 3,
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "action" : "pass"
+  },
+  {
+    "target" : 5,
+    "source" : 4,
+    "record" : "dialplan_in",
+    "prio" : 4,
+    "match" : "undefined",
+    "id" : 4,
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "action" : "pass"
+  },
+  {
+    "target" : 4,
+    "source" : 2,
+    "record" : "dialplan_in",
+    "prio" : 6,
+    "match" : "undefined",
+    "id" : 6,
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "action" : "pass"
+  },
+  {
+    "target" : 4,
+    "source" : 1,
+    "record" : "dialplan_in",
+    "prio" : 2,
+    "match" : "undefined",
+    "id" : 2,
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "action" : "pass"
+  },
+  {
+    "target" : 2,
+    "source" : 4,
+    "record" : "dialplan_in",
+    "prio" : 5,
+    "match" : "undefined",
+    "id" : 5,
+    "domain_id" : 1,
+    "domain" : {
+      "record" : "domain",
+      "name" : "docker.ezuce.com",
+      "id" : 1,
+      "description" : "undefined"
+    },
+    "action" : "pass"
+  }
+]

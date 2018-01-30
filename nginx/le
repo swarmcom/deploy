@@ -1,0 +1,21 @@
+#!/bin/bash
+DOMAIN=$1
+if [ -z "$DOMAIN" ]
+then
+	echo Usage: $0 fqdn
+	exit 1
+fi
+
+alias le.pl='docker run -it -v /home/ezuce/keys:/data -v /home/ezuce/keys-challenge/.well-known/acme-challenge:/webroot -u $(id -u) --rm zerossl/client'
+
+docker run -it -v /home/ezuce/keys:/data -v /home/ezuce/keys-challenge/.well-known/acme-challenge:/webroot -u $(id -u) --rm zerossl/client \
+	-generate-missing \
+	-key ezuce.key \
+	-email 'roman.galeev@ezuce.com' \
+	-csr $DOMAIN.csr \
+	-csr-key $DOMAIN.key \
+	-crt $DOMAIN.crt \
+	-domains $DOMAIN \
+	-path /webroot \
+	-unlink \
+	-live
