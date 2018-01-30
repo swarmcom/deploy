@@ -29,4 +29,4 @@ docker run $FLAGS $PORTMAP \
 	--env NAME=$NAME \
 	--env EXT_IP=$EXT_IP \
 	--env NODE=$NODE \
-	reach3/kamailio
+	ezuce/kamailio

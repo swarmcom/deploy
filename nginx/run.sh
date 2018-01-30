@@ -21,4 +21,4 @@ docker run $FLAGS \
 	--env NETWORK=$NETWORK \
 	-v /home/ezuce/keys-challenge:/challenge \
 	-v /home/ezuce/keys:/keys \
-	reach3/nginx
+	ezuce/nginx
