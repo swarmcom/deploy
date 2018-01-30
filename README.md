@@ -1,10 +1,21 @@
 Reach3 docker deployment
 ========================
 
+Requirements
+============
+
+* A linux server with accessible IP address (public) able to run Docker version at least 1.9.0 (any modern would fit)
+* A domain name resolving to this IP address that will serve as an UI entrance point and a SIP domain
+* Installed git
+
+Notes
+=====
+
+Setup procedure will try to automatically detect the external IP address.
+
 Installation
 ============
 
-You need to have Docker version at least 1.9.0 (as this setup relies on docker network heavily).
 Clone this repo to the target host, and do:
 
 ```sh
