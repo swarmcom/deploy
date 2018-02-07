@@ -25,7 +25,7 @@ chmod +x rhel-host-setup.sh
 ./rhel-host-setup.sh
 ```
 
-Then login as user ezuce, and do:
+Then login as user ezuce (`su - ezuce`, for example), and do:
 
 ```sh
 cd deploy
