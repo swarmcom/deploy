@@ -27,6 +27,9 @@ cd deploy
 
 Then login as user ezuce, and do:
 
+su ezuce
+cd /home/ezuce
+
 ```sh
 git clone https://github.com/swarmcom/deploy
 cd deploy
