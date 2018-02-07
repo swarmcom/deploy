@@ -16,7 +16,7 @@ Setup procedure will try to automatically detect the external IP address.
 Installation
 ============
 
-Clone this repo to the target host, and execute as root:
+Clone this repo to the target host (RHEL 7), and execute as root:
 
 ```sh
 ./rhel-host-setup.sh

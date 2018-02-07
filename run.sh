@@ -1,6 +1,6 @@
 #!/bin/sh
 DOMAIN=$1
-NETWORK=${2:-"reach3"}
+export NETWORK=${2:-"reach3"}
 
 if [ -z $DOMAIN ]
 then
