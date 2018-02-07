@@ -1,9 +1,7 @@
 #!/bin/sh
-yum -y update
-yum -y install yum-utils device-mapper-persistent-data lvm2 git ngrep tcpdump net-tools sudo
 yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-yum -y install docker-ce
-yum -y install docker-ce
+yum -y update
+yum -y install yum-utils device-mapper-persistent-data lvm2 git ngrep tcpdump net-tools sudo docker-ce
 systemctl start docker
 adduser ezuce
 usermod -a -G docker ezuce
