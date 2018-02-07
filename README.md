@@ -16,15 +16,19 @@ Setup procedure will try to automatically detect the external IP address.
 Installation
 ============
 
-Clone this repo to the target host (RHEL 7), and execute as root:
+Execute as root:
 
 ```sh
+yum -y install git
+git clone https://github.com/swarmcom/deploy
+cd deploy
 ./rhel-host-setup.sh
 ```
 
 Then login as user ezuce, and do:
 
 ```sh
+git clone https://github.com/swarmcom/deploy
 cd deploy
 ./run.sh DOMAIN
 ```
