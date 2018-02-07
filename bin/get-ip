@@ -1,0 +1,9 @@
+#!/bin/sh -e
+NETWORK=${NETWORK:-"ezuce"}
+if [ "$1" = "" ]
+then
+	echo Usage: $0 container
+	exit
+fi
+
+docker inspect --format "{{ (index .NetworkSettings.Networks \"$NETWORK\").IPAddress }}" $1
