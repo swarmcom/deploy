@@ -7,6 +7,6 @@ then
 	exit
 fi
 ./le $DOMAIN
-./gen-conf.sh $DOMAIN $NETWORK
+./gen-conf.sh $DOMAIN $NETWORK > conf.d/$DOMAIN.conf
 ./build.sh
 ./run.sh
