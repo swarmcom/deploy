@@ -16,8 +16,15 @@ Setup procedure will try to automatically detect the external IP address.
 Installation
 ============
 
-Clone this repo to the target host, and do:
+Clone this repo to the target host, and execute as root:
 
 ```sh
-./run.sh
+./rhel-host-setup.sh
+```
+
+Then login as user ezuce, and do:
+
+```sh
+cd deploy
+./run.sh DOMAIN
 ```
