@@ -19,16 +19,15 @@ Installation
 Execute as root:
 
 ```sh
-yum -y install git
-git clone https://github.com/swarmcom/deploy
-cd deploy
+yum -y install curl
+curl https://raw.githubusercontent.com/swarmcom/deploy/master/rhel-host-setup.sh > rhel-host-setup.sh
+chmod +x rhel-host-setup.sh
 ./rhel-host-setup.sh
 ```
 
 Then login as user ezuce, and do:
 
 ```sh
-git clone https://github.com/swarmcom/deploy
 cd deploy
 ./run.sh DOMAIN
 ```

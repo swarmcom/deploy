@@ -8,5 +8,8 @@ adduser ezuce
 usermod -a -G docker ezuce
 mkdir -p /home/ezuce/keys
 mkdir -p /home/ezuce/keys-challenge/.well-known/acme-challenge
+cd /home/ezuce
+git clone https://github.com/swarmcom/deploy
 chown ezuce:ezuce -R /home/ezuce
 echo "%ezuce ALL=(root) NOPASSWD:/sbin/iptables" > /etc/sudoers.d/ezuce
+echo Login now as ezuce to continue set up
