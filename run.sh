@@ -9,6 +9,12 @@ then
 	exit
 fi
 
+echo Update images
+for IMAGE in ezuce/reach ezuce/reach-ui nginx ezuce/kamailio ezuce/freeswitch-reach3 ezuce/rr ezuce/timescale
+do
+	docker pull $IMAGE
+done
+
 docker network create $NETWORK
 for FOLDER in timescale rr kamailio freeswitch reach3 reach-ui
 do

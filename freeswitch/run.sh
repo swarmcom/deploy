@@ -22,4 +22,4 @@ docker run $FLAGS \
 	--env NODE=freeswitch@$NAME \
 	--env REACH_NODE=$REACH_NODE \
 	--env REACH_HOST=$REACH_HOST \
-	ezuce/freeswitch
+	ezuce/freeswitch-reach3
