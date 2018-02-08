@@ -9,8 +9,11 @@ fi
 
 cat <<EOT
 server {
-   listen 80;
+   listen 443 ssl;
    server_name $DOMAIN;
+
+   ssl_certificate /keys/$DOMAIN.crt;
+   ssl_certificate_key /keys/$DOMAIN.key;
 
    client_max_body_size 20M;
 

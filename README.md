@@ -31,3 +31,10 @@ Then login as user ezuce (`su - ezuce`, for example), and do:
 cd deploy
 ./run.sh DOMAIN
 ```
+
+If you want to enable HTTPS with certificates from [LetsEncrypt](https://letsencrypt.org/):
+
+```sh
+cd deploy
+USE_SSL=1 ./run.sh DOMAIN
+```

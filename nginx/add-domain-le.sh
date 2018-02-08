@@ -6,6 +6,7 @@ then
 	echo Usage: $0 domain network
 	exit
 fi
-./gen-conf.sh $DOMAIN $NETWORK > conf.d/$DOMAIN.conf
+./le $DOMAIN
+./gen-conf-le.sh $DOMAIN $NETWORK > conf.d/$DOMAIN.conf
 ./build.sh
 ./run.sh

@@ -1,4 +1,5 @@
 #!/bin/sh
+USE_LE=${USE_SSL:-""}
 DOMAIN=$1
 export NETWORK=${2:-"reach3"}
 
@@ -19,4 +20,9 @@ cd nginx && ./build.sh && ./run.sh && cd ../
 FS_IP=`bin/get-ip freeswitch.$NETWORK`
 sudo /sbin/iptables -t nat -A PREROUTING -i eth0 -p udp -m udp --dport 10000:12000 -j DNAT --to-destination $FS_IP
 
-cd nginx && ./add-domain.sh $DOMAIN $NETWORK && cd ../
+if [ -z $USE_LE ]
+then
+	cd nginx && ./add-domain.sh $DOMAIN $NETWORK && cd ../
+else
+	cd nginx && ./add-domain-le.sh $DOMAIN $NETWORK && cd ../
+fi
