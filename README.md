@@ -38,3 +38,16 @@ If you want to enable HTTPS with certificates from [LetsEncrypt](https://letsenc
 cd deploy
 USE_SSL=1 ./run.sh DOMAIN
 ```
+
+If you want to provide certificates on your own, then you need to place them to /home/ezuce/keys folder named after domain (an example):
+
+```sh
+ls ~/keys/
+my_fake_domain.crt
+my_fake_domain.key
+```
+And then to use gen_conf_le.sh:
+```sh
+cd ~/deploy/nginx
+./gen-conf-le.sh my_fake_domain > conf.d/my_fake_domain.conf
+```
