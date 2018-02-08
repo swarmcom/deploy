@@ -1,8 +1,9 @@
 #!/bin/bash
 DOMAIN=$1
-if [ -z "$DOMAIN" ]
+USE_LE=$2
+if [ -z "$USE_LE" ]
 then
-	echo Usage: $0 fqdn
+	echo Usage: $0 fqdn le_email
 	exit 1
 fi
 
@@ -11,7 +12,7 @@ alias le.pl='docker run -it -v /home/ezuce/keys:/data -v /home/ezuce/keys-challe
 docker run -it -v /home/ezuce/keys:/data -v /home/ezuce/keys-challenge/.well-known/acme-challenge:/webroot -u $(id -u) --rm zerossl/client \
 	-generate-missing \
 	-key ezuce.key \
-	-email 'roman.galeev@ezuce.com' \
+	-email $USE_LE \
 	-csr $DOMAIN.csr \
 	-csr-key $DOMAIN.key \
 	-crt $DOMAIN.crt \

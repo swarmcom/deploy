@@ -36,7 +36,7 @@ If you want to enable HTTPS with certificates from [LetsEncrypt](https://letsenc
 
 ```sh
 cd deploy
-USE_SSL=1 ./run.sh DOMAIN
+USE_LE=your_le_email_address ./run.sh DOMAIN
 ```
 
 If you want to provide certificates on your own, then you need to place them to /home/ezuce/keys folder named after domain (an example):

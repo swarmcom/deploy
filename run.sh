@@ -1,5 +1,5 @@
 #!/bin/sh
-USE_LE=${USE_SSL:-""}
+USE_LE=${USE_LE:-""}
 DOMAIN=$1
 export NETWORK=${2:-"reach3"}
 
@@ -24,5 +24,6 @@ if [ -z $USE_LE ]
 then
 	cd nginx && ./add-domain.sh $DOMAIN $NETWORK && cd ../
 else
+	export USE_LE
 	cd nginx && ./add-domain-le.sh $DOMAIN $NETWORK && cd ../
 fi
