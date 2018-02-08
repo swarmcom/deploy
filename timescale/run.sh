@@ -16,11 +16,11 @@ echo -n "starting: $NAME "
 docker run $FLAGS \
 	--net $NETWORK \
 	-h $NAME \
+	--restart=always \
 	--name $NAME \
 	--env NETWORK=$NETWORK \
 	ezuce/timescale
 
-sleep 5
-docker exec -it --user postgres $NAME psql -c "CREATE USER reach WITH PASSWORD '$PASSWORD'"
-docker exec -it --user postgres $NAME createdb -O reach reach
-docker exec -it --user postgres $NAME psql -c "CREATE EXTENSION IF NOT EXISTS timescaledb CASCADE" reach
+docker exec $NAME /wait-for.sh "CREATE USER reach WITH PASSWORD '$PASSWORD' SUPERUSER"
+docker exec $NAME /wait-for.sh "CREATE DATABASE reach OWNER reach"
+docker exec $NAME /wait-for.sh "GRANT ALL PRIVILEGES ON DATABASE reach to reach"

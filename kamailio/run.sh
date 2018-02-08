@@ -23,6 +23,7 @@ echo -n "starting: $NAME ext_ip: $EXT_IP "
 docker run $FLAGS $PORTMAP \
 	--net $NETWORK \
 	-h $NAME \
+	--restart=always \
 	--name $NAME \
 	--env NETWORK=$NETWORK \
 	--env REACH_NODE=$REACH_NODE \

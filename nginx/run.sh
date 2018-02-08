@@ -16,6 +16,7 @@ docker run $FLAGS \
 	-p 80:80 \
 	-p 443:443 \
 	--net $NETWORK \
+	--restart=always \
 	-h $NAME \
 	--name $NAME \
 	--env NETWORK=$NETWORK \

@@ -16,6 +16,7 @@ echo -n "starting: $NAME "
 docker run $FLAGS \
 	--net $NETWORK \
 	-h $NAME \
+	--restart=always \
 	--name $NAME \
 	--env NETWORK=$NETWORK \
 	--env REACH_WS=$REACH_WS \

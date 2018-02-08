@@ -46,6 +46,7 @@ ls ~/keys/
 my_fake_domain.crt
 my_fake_domain.key
 ```
+
 And then to use gen_conf_le.sh:
 ```sh
 cd ~/deploy/nginx
