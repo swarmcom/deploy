@@ -4,7 +4,7 @@ NETWORK=${NETWORK:-"reach3"}
 REACH_NODE=${REACH_NODE:-"reach@reach.$NETWORK"}
 NAME=${NAME:-"kamailio.$NETWORK"}
 NODE=${NODE:-"kamailio@$NAME"}
-EXT_IP=${EXT_IP:-"$(curl -s ifconfig.co)"}
+EXT_IP=${EXT_IP:-"$(curl -4 -s ifconfig.co)"}
 PORTMAP=${PORTMAP:-"-p 5060:5060/udp"}
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
