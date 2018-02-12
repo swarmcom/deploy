@@ -28,14 +28,14 @@ chmod +x rhel-host-setup.sh
 Then login as user ezuce (`su - ezuce`, for example), and do:
 
 ```sh
-cd deploy
+cd /home/ezuce/deploy
 ./run.sh DOMAIN
 ```
 
 If you want to enable HTTPS with certificates from [LetsEncrypt](https://letsencrypt.org/):
 
 ```sh
-cd deploy
+cd /home/ezuce/deploy
 USE_LE=your_le_email_address ./run.sh DOMAIN
 ```
 
@@ -52,3 +52,14 @@ And then to use gen_conf_le.sh:
 cd ~/deploy/nginx
 ./gen-conf-le.sh my_fake_domain > conf.d/my_fake_domain.conf
 ```
+
+Upgrading
+=========
+
+To update login to server as root and then as user ezuce (`su - ezuce`, for example), and do:
+
+```sh
+cd /home/ezuce/deploy
+./run.sh DOMAIN
+```
+
