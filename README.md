@@ -4,7 +4,7 @@ Reach3 docker deployment
 Requirements
 ============
 
-* A linux server with accessible IP address (public) able to run Docker version at least 1.9.0 (any modern would fit)
+* A linux server with accessible IP address (public - for https installation) or a linux server with private IP address (for http installation) able to run Docker version at least 1.9.0 (any modern would fit).
 * A domain name resolving to this IP address that will serve as an UI entrance point and a SIP domain
 * Installed git
 
@@ -12,6 +12,7 @@ Notes
 =====
 
 Setup procedure will try to automatically detect the external IP address.
+Images are quite large at the moment due to dev code in the images.
 
 Installation
 ============
