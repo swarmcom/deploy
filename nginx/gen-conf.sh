@@ -7,10 +7,26 @@ then
 	exit
 fi
 
+if [ -e ~/keys/$DOMAIN.crt && -e ~/keys/$DOMAIN.key ]
+then
+   echo Found certificates for $DOMAIN at ~/keys/, continue with ssl
+   LISTEN_TO=<<EOS
+listen 443 ssl;
+ssl_certificate /keys/$DOMAIN.crt;
+ssl_certificate_key /keys/$DOMAIN.key;
+EOS
+else
+   echo No certificates for $DOMAIN found at ~/keys/, continue unencrypted
+   LISTEN_TO=<<EOP
+listen 80;
+EOP
+fi
+
 cat <<EOT
 server {
-   listen 80;
    server_name $DOMAIN;
+
+   $LISTEN_TO
 
    client_max_body_size 20M;
 

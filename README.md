@@ -26,30 +26,20 @@ chmod +x rhel-host-setup.sh
 ./rhel-host-setup.sh
 ```
 
-Use this to install without a cert on Private IP address:
----------------------------------------------------------
+Setup Reach3 without https enabled
+----------------------------------
 
-Then login as user ezuce (`su - ezuce`, for example), and do:
+Login as user ezuce (`su - ezuce`, for example), and do:
 
 ```sh
 cd /home/ezuce/deploy
 ./run.sh DOMAIN
 ```
 
-Use this to install with an auto generated cert behind a Public IP address:
----------------------------------------------------------------------------
+Setup Reach3 with https and your own certificates
+-------------------------------------------------
 
-If you want to enable HTTPS with certificates from [LetsEncrypt](https://letsencrypt.org/):
-
-```sh
-cd /home/ezuce/deploy
-USE_LE=your_le_email_address ./run.sh DOMAIN
-```
-
-Use this to install with your own cert behind a Public IP address:
-------------------------------------------------------------------
-
-If you want to provide certificates on your own, then you need to place them to /home/ezuce/keys folder named after domain (an example):
+If you want to provide certificates on your own, then you need to place them to /home/ezuce/keys folder and name them after domain (an example):
 
 ```sh
 ls ~/keys/
@@ -57,10 +47,21 @@ my_fake_domain.crt
 my_fake_domain.key
 ```
 
-And then to use gen_conf_le.sh:
+And then:
+
 ```sh
-cd ~/deploy/nginx
-./gen-conf-le.sh my_fake_domain > conf.d/my_fake_domain.conf
+cd /home/ezuce/deploy
+./run.sh DOMAIN
+```
+
+Setup Reach3 with https and LE certificates
+-------------------------------------------
+
+If you want to enable HTTPS with certificates from [LetsEncrypt](https://letsencrypt.org/):
+
+```sh
+cd /home/ezuce/deploy
+USE_LE=your_le_email_address ./run.sh DOMAIN
 ```
 
 Upgrading

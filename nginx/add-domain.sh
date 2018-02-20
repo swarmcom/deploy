@@ -6,6 +6,7 @@ then
 	echo Usage: $0 domain network
 	exit
 fi
+[ ! -z $USE_LE ] && ./le $DOMAIN $USE_LE
 ./gen-conf.sh $DOMAIN $NETWORK > conf.d/$DOMAIN.conf
 ./build.sh
 ./run.sh
