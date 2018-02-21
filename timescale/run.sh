@@ -3,7 +3,7 @@ FLAGS=${FLAGS:-"-td"}
 NETWORK=${NETWORK:-"reach3"}
 PASSWORD=${PASSWORD:-"reachpass"}
 NAME=${NAME:-"timescale.$NETWORK"}
-VOLUME=$NAME-db
+VOLUME=db-$NAME
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
 then
