@@ -3,6 +3,7 @@ FLAGS=${FLAGS:-"-td"}
 NETWORK=${NETWORK:-"reach3"}
 NAME=${NAME:-"reach-ui.$NETWORK"}
 REACH_WS=${REACH_WS:-""}
+CFG_DB=${CFG_DB:-"$HOME/db"}
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
 then
@@ -12,8 +13,13 @@ then
 	docker rm -f $NAME
 fi
 
-echo -n "starting: $NAME "
+# file must exist
+mkdir -p $CFG_DB
+touch $CFG_DB/reach_db.json
+
+echo -n "starting: $NAME data: $CFG_DB "
 docker run $FLAGS \
+	-v $CFG_DB:/home/user/reach/db \
 	--net $NETWORK \
 	-h $NAME \
 	--restart=always \

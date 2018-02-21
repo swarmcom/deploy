@@ -3,6 +3,7 @@ FLAGS=${FLAGS:-"-td"}
 NETWORK=${NETWORK:-"reach3"}
 PASSWORD=${PASSWORD:-"reachpass"}
 NAME=${NAME:-"timescale.$NETWORK"}
+PG_DB=${CFG_DB:-"$HOME/pg"}
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
 then
@@ -12,8 +13,9 @@ then
 	docker rm -f $NAME
 fi
 
-echo -n "starting: $NAME "
+echo -n "starting: $NAME data:$PG_DB "
 docker run $FLAGS \
+	-v $PG_DB:/var/lib/postgresql/data \
 	--net $NETWORK \
 	-h $NAME \
 	--restart=always \
