@@ -20,8 +20,7 @@ then
 fi
 
 echo -n "starting: $NAME ext_ip: $EXT_IP "
-docker run $FLAGS $PORTMAP \
-	--net $NETWORK \
+docker create $FLAGS $PORTMAP \
 	-h $NAME \
 	--restart=always \
 	--name $NAME \
@@ -31,3 +30,6 @@ docker run $FLAGS $PORTMAP \
 	--env EXT_IP=$EXT_IP \
 	--env NODE=$NODE \
 	ezuce/kamailio
+
+docker network connect $NETWORK $NAME
+docker start $NAME
