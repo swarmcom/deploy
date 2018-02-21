@@ -23,6 +23,11 @@ docker run $FLAGS \
 	--env NETWORK=$NETWORK \
 	ezuce/timescale
 
-docker exec $NAME /wait-for.sh "CREATE USER reach WITH PASSWORD '$PASSWORD' SUPERUSER"
-docker exec $NAME /wait-for.sh "CREATE DATABASE reach OWNER reach"
-docker exec $NAME /wait-for.sh "GRANT ALL PRIVILEGES ON DATABASE reach to reach"
+if [ ! -e $PG_DB/pg_hba.conf ]
+then
+	docker exec $NAME /wait-for.sh "CREATE USER reach WITH PASSWORD '$PASSWORD' SUPERUSER"
+	docker exec $NAME /wait-for.sh "CREATE DATABASE reach OWNER reach"
+	docker exec $NAME /wait-for.sh "GRANT ALL PRIVILEGES ON DATABASE reach to reach"
+else
+	echo Skip database initialization, data folder is not empty
+fi
