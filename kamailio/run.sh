@@ -1,5 +1,5 @@
 #!/bin/sh -e
-FLAGS=${FLAGS:-"-td"}
+FLAGS=${FLAGS:-"-t"}
 NETWORK=${NETWORK:-"reach3"}
 REACH_NODE=${REACH_NODE:-"reach@reach.$NETWORK"}
 NAME=${NAME:-"kamailio.$NETWORK"}
