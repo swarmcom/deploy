@@ -9,14 +9,14 @@ fi
 
 if [ -e ~/keys/$DOMAIN.crt ] && [ -e ~/keys/$DOMAIN.key ]
 then
-   echo Found certificates for domain:$DOMAIN at ~/keys/, continue with ssl
+   echo Found certificates for domain:$DOMAIN at ~/keys/, continue with ssl >2
    read -r -d '' LISTEN_TO <<EOS
    listen 443 ssl;
    ssl_certificate /keys/$DOMAIN.crt;
    ssl_certificate_key /keys/$DOMAIN.key;
 EOS
 else
-   echo No certificates for domain:$DOMAIN found at ~/keys/, continue unencrypted
+   echo No certificates for domain:$DOMAIN found at ~/keys/, continue unencrypted >2
    read -r -d '' LISTEN_TO <<EOS
    listen 80;
 EOS
