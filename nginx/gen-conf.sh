@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 DOMAIN=$1
 NETWORK=${2:-"reach3"}
 if [ -z $DOMAIN ]
@@ -15,6 +15,15 @@ then
    ssl_certificate /keys/$DOMAIN.crt;
    ssl_certificate_key /keys/$DOMAIN.key;
 EOS
+	read -r -d '' REDIRECT <<EOS
+server {
+   server_name $DOMAIN;
+   listen 80;
+   location / {
+      return 301 https://$host$request_uri;
+   }
+}
+EOS
 else
    echo No certificates for domain:$DOMAIN found at ~/keys/, continue unencrypted >&2
    read -r -d '' LISTEN_TO <<EOS
@@ -23,6 +32,8 @@ EOS
 fi
 
 cat <<EOT
+$REDIRECT
+
 server {
    server_name $DOMAIN;
 
