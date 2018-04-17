@@ -34,6 +34,6 @@ export USE_LE
 cd nginx && ./add-domain.sh $DOMAIN $NETWORK && cd ../
 
 # Configure reach runtime
-docker exec reach.$NETWORK ./rpc.sh db_instance_param set a:record_server http://rr.$NETWORK:9090
-docker exec reach.$NETWORK ./rpc.sh db_instance_param set a:moh_server shout://rr.$NETWORK:9091
+docker exec reach.$NETWORK ./rpc.sh db_instance_param set a:record_server b:http://rr.$NETWORK:9090
+docker exec reach.$NETWORK ./rpc.sh db_instance_param set a:moh_server b:shout://rr.$NETWORK:9091
 
