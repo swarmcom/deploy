@@ -22,8 +22,9 @@ fi
 # file must exists
 mkdir -p $CFG_DB
 touch $CFG_DB/reach_db.json
+chmod o+w $CFG_DB/reach_db.json
 
-echo -n "starting: $NAME "
+echo -n "starting: $NAME with db: $CFG_DB/reach_db.json "
 docker run $FLAGS \
 	-v $CFG_DB:/home/user/reach/db \
 	--net $NETWORK \
