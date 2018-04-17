@@ -5,7 +5,7 @@ NAME=${NAME:-"reach.$NETWORK"}
 FSNODE=${FSNODE:-"freeswitch@freeswitch.$NETWORK"}
 KAMNODE=${KAMNODE:-"kamailio@kamailio.$NETWORK"}
 NODE=${NODE:-"reach@$NAME"}
-CFG_DB=${CFG_DB:-"`pwd`/db"}
+VOLUME=db-$NAME
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
 then
@@ -19,13 +19,14 @@ then
 	docker rm -f $NAME
 fi
 
-# file must exists
-mkdir -p $CFG_DB
-touch $CFG_DB/reach_db.json
+if [ -z $(docker volume ls  -q -f name=$VOLUME) ]
+then
+	docker volume create $VOLUME
+fi
 
 echo -n "starting: $NAME "
 docker run $FLAGS \
-	-v $CFG_DB:/home/user/reach/db \
+	-v $VOLUME:/home/user/reach/db \
 	--net $NETWORK \
 	-h $NAME \
 	--restart=always \
