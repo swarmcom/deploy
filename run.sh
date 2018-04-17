@@ -30,14 +30,8 @@ sudo /sbin/iptables -t nat -A PREROUTING -i eth0 -p udp -m udp --dport 10000:120
 KAM_IP=`bin/get-ip kamailio.$NETWORK`
 sudo /sbin/iptables -t nat -A PREROUTING -p udp -m udp -d $EXT_IP --dport 5060 -j DNAT --to-destination $KAM_IP
 
-if [ -z $USE_LE ]
-then
-	cd nginx && ./add-domain.sh $DOMAIN $NETWORK && cd ../
-else
-	export USE_LE
-	cd nginx && ./add-domain-le.sh $DOMAIN $NETWORK && cd ../
-fi
-
+export USE_LE
+cd nginx && ./add-domain.sh $DOMAIN $NETWORK && cd ../
 
 # Configure reach runtime
 docker exec reach.$NETWORK ./rpc.sh db_instance_param set a:record_server http://rr.$NETWORK:9090

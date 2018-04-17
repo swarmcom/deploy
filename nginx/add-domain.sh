@@ -10,3 +10,5 @@ fi
 ./gen-conf.sh $DOMAIN $NETWORK > conf.d/$DOMAIN.conf
 ./build.sh
 ./run.sh
+
+docker exec reach.$NETWORK ./rpc.sh reach_db add_domain b:$DOMAIN
