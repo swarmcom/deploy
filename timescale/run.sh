@@ -21,7 +21,7 @@ fi
 
 echo -n "starting: $NAME data:$VOLUME "
 docker run $FLAGS \
-	-v $VOLUME:/var/lib/postgresql/data \
+	-v $PG_DB:/var/lib/postgresql/data \
 	--net $NETWORK \
 	-h $NAME \
 	--restart=always \
