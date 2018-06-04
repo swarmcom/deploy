@@ -24,6 +24,11 @@ mkdir -p $CFG_DB
 touch $CFG_DB/reach_db.json
 chmod o+w $CFG_DB/reach_db.json
 
+if [ ! -z $CLEAR_RUNTIME_DB ]
+then
+	echo > $CFG_DB/reach_db.json
+fi
+
 echo -n "starting: $NAME with db: $CFG_DB/reach_db.json "
 docker run $FLAGS \
 	-v $CFG_DB:/home/user/reach/db \

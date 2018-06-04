@@ -74,3 +74,9 @@ cd /home/ezuce/deploy
 ./run.sh DOMAIN
 ```
 
+In case to clear runtime or sql configuration, you might use env variables:
+
+```sh
+CLEAR_SQL_DB=1 CLEAR_RUNTIME_DB=1 ./run.sh DOMAIN
+```
+

@@ -13,6 +13,11 @@ then
 	docker rm -f $NAME
 fi
 
+if [ ! -z $CLEAR_SQL_DB ]
+then
+	docker volume rm $VOLUME
+fi
+
 if [ -z $(docker volume ls  -q -f name=$VOLUME) ]
 then
 	CREATE_VOLUME=1
