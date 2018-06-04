@@ -19,6 +19,9 @@ EOS
 server {
    server_name $DOMAIN;
    listen 80;
+   location /.well-known/acme-challenge/ {
+      root /challenge/;
+   }
    location / {
       return 301 https://$host$request_uri;
    }
