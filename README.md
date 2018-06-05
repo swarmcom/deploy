@@ -67,6 +67,12 @@ USE_LE=your_le_email_address ./run.sh DOMAIN
 Upgrading
 =========
 
+Update the deploy repo with the following from the /home/ezuce/deply folder:
+
+```sh
+git pull origin master
+```
+
 To update login to server as root and then as user ezuce (`su - ezuce`, for example), and do:
 
 ```sh
@@ -74,7 +80,7 @@ cd /home/ezuce/deploy
 ./run.sh DOMAIN
 ```
 
-In case to clear runtime or sql configuration, you might use env variables:
+You may need or want to clear runtime or sql configuration, you might use env variables:
 
 ```sh
 CLEAR_SQL_DB=1 CLEAR_RUNTIME_DB=1 ./run.sh DOMAIN
