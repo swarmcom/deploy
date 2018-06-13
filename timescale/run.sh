@@ -4,6 +4,7 @@ NETWORK=${NETWORK:-"reach3"}
 PASSWORD=${PASSWORD:-"reachpass"}
 NAME=${NAME:-"timescale.$NETWORK"}
 VOLUME=db-$NAME
+HUB=${HUB:-"reach3"}
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
 then
@@ -32,7 +33,7 @@ docker run $FLAGS \
 	--restart=always \
 	--name $NAME \
 	--env NETWORK=$NETWORK \
-	ezuce/timescale
+	$HUB/timescale
 
 if [ ! -z $CREATE_VOLUME ]
 then

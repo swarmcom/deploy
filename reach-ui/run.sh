@@ -4,6 +4,7 @@ NETWORK=${NETWORK:-"reach3"}
 NAME=${NAME:-"reach-ui.$NETWORK"}
 REACH_WS=${REACH_WS:-""}
 CFG_DB=${CFG_DB:-"$HOME/db"}
+HUB=${HUB:-"reach3"}
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
 then
@@ -26,4 +27,4 @@ docker run $FLAGS \
 	--name $NAME \
 	--env NETWORK=$NETWORK \
 	--env REACH_WS=$REACH_WS \
-	ezuce/reach-ui
+	$HUB/reach-ui

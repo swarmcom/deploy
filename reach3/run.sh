@@ -6,6 +6,7 @@ FSNODE=${FSNODE:-"freeswitch@freeswitch.$NETWORK"}
 KAMNODE=${KAMNODE:-"kamailio@kamailio.$NETWORK"}
 NODE=${NODE:-"reach@$NAME"}
 CFG_DB=${CFG_DB:-"`pwd`/db"}
+HUB=${HUB:-"reach3"}
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
 then
@@ -40,4 +41,4 @@ docker run $FLAGS \
 	--env NODE=$NODE \
 	--env FSNODE=$FSNODE \
 	--env KAMNODE=$KAMNODE \
-	ezuce/reach
+	$HUB/reach

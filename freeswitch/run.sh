@@ -4,6 +4,7 @@ NETWORK=${NETWORK:-"reach3"}
 NAME=${NAME:-"freeswitch.$NETWORK"}
 REACH_NODE=${REACH_NODE:-"reach@reach.$NETWORK"}
 REACH_HOST=${REACH_HOST:-"http://reach.$NETWORK:8937"}
+HUB=${HUB:-"reach3"}
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
 then
@@ -22,4 +23,4 @@ docker run $FLAGS \
 	--env NODE=freeswitch@$NAME \
 	--env REACH_NODE=$REACH_NODE \
 	--env REACH_HOST=$REACH_HOST \
-	ezuce/freeswitch-reach3
+	$HUB/freeswitch

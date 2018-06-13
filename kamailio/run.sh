@@ -6,6 +6,7 @@ NAME=${NAME:-"kamailio.$NETWORK"}
 NODE=${NODE:-"kamailio@$NAME"}
 EXT_IP=${EXT_IP:-"$(curl -4 -s ifconfig.co)"}
 PORTMAP=${PORTMAP:-"-p 5060:5060/udp"}
+HUB=${HUB:-"reach3"}
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
 then
@@ -29,7 +30,7 @@ docker create $FLAGS $PORTMAP \
 	--env NAME=$NAME \
 	--env EXT_IP=$EXT_IP \
 	--env NODE=$NODE \
-	ezuce/kamailio
+	$HUB/kamailio
 
 docker network connect $NETWORK $NAME
 docker start $NAME

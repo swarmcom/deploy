@@ -2,6 +2,7 @@
 FLAGS=${FLAGS:-"-td"}
 NETWORK=${NETWORK:-"reach3"}
 NAME=${NAME:-"nginx.$NETWORK"}
+HUB=${HUB:-"reach3"}
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
 then
@@ -22,4 +23,4 @@ docker run $FLAGS \
 	--env NETWORK=$NETWORK \
 	-v /home/ezuce/keys-challenge:/challenge \
 	-v /home/ezuce/keys:/keys \
-	ezuce/nginx
+	$HUB/nginx
