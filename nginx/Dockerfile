@@ -1,5 +1,6 @@
 FROM nginx
-MAINTAINER Roman Galeev <jamhedd@gmail.com>
+LABEL author="Roman Galeev <jamhedd@gmail.com>"
+LABEL maintainer="Pavel Farkas <pavel.farkas@ezuce.com>"
 
 EXPOSE 80
 EXPOSE 443

@@ -1,2 +1,3 @@
 #!/bin/sh -e
-docker build $BUILD_FLAGS -t ezuce/nginx .
+HUB=${HUB:-"reach3"}
+docker build $BUILD_FLAGS -t $HUB/nginx .

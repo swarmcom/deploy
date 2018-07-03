@@ -2,15 +2,16 @@
 USE_LE=${USE_LE:-""}
 DOMAIN=$1
 export NETWORK=${2:-"reach3"}
+export HUB=${3:-"reach3"}
 
 if [ -z $DOMAIN ]
 then
-	echo Usage: $0 domain [network]
+	echo Usage: $0 domain [network] [hub]
 	exit
 fi
 
 echo Update images
-for IMAGE in ezuce/reach ezuce/reach-ui nginx ezuce/kamailio ezuce/freeswitch-reach3 ezuce/rr ezuce/timescale
+for IMAGE in $HUB/reach $HUB/reach-ui nginx $HUB/kamailio $HUB/freeswitch-reach3 $HUB/rr $HUB/timescale
 do
 	docker pull $IMAGE
 done
