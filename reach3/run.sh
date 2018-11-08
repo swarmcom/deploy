@@ -6,6 +6,7 @@ FSNODE=${FSNODE:-"freeswitch@freeswitch.$NETWORK"}
 KAMNODE=${KAMNODE:-"kamailio@kamailio.$NETWORK"}
 NODE=${NODE:-"reach@$NAME"}
 CFG_DB=${CFG_DB:-"`pwd`/db"}
+VOLUME=db-$NAME
 HUB=${HUB:-"reach3"}
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
@@ -30,9 +31,20 @@ then
 	echo > $CFG_DB/reach_db.json
 fi
 
+if [ ! -z $CLEAR_RUNTIME_DB ]
+then
+	docker volume rm $VOLUME
+fi
+
+if [ -z $(docker volume ls  -q -f name=$VOLUME) ]
+then
+	docker volume create $VOLUME
+fi
+
 echo -n "starting: $NAME with db: $CFG_DB/reach_db.json "
 docker run $FLAGS \
 	-v $CFG_DB:/home/user/reach/db \
+	-v $VOLUME:/home/user/reach/db-mnesia \
 	--net $NETWORK \
 	-h $NAME \
 	--restart=always \
