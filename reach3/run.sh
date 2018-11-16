@@ -53,4 +53,4 @@ docker run $FLAGS \
 	--env NODE=$NODE \
 	--env FSNODE=$FSNODE \
 	--env KAMNODE=$KAMNODE \
-	$HUB/reach
+	'reach3/reach:REACH-42'
