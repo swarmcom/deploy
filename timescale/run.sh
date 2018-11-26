@@ -19,7 +19,7 @@ then
 	docker volume rm $VOLUME
 fi
 
-if [ -z $(docker volume ls  -q -f name=$VOLUME) ]
+if [ -z $(docker volume ls -q -f name=$VOLUME) ]
 then
 	CREATE_VOLUME=1
 	docker volume create $VOLUME
