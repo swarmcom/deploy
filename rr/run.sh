@@ -16,17 +16,17 @@ fi
 
 if [ ! -z $CLEAR_RR_DATA ]
 then
-	docker rm $VOLUME
+	docker volume rm $VOLUME
 fi
 
-if [ -z $(docker container ls -q -a -f name=$VOLUME) ]
+if [ -z $(docker volume ls -q -f name=$VOLUME) ]
 then
-	docker create --name $VOLUME $HUB/rrvol
+	docker volume create $VOLUME
 fi
 
-echo -n "starting: $NAME volume: $VOLUME instance: "
+echo -n "starting: $NAME data volume: $VOLUME"
 docker run $FLAGS \
-	--volumes-from $VOLUME \
+	-v $VOLUME:/home/user/rr/data \
 	--net $NETWORK \
 	-h $NAME \
 	--restart=always \
