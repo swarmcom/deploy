@@ -24,7 +24,7 @@ then
 	docker volume create $VOLUME
 fi
 
-echo -n "starting: $NAME volume: data: $VOLUME"
+echo -n "starting: $NAME data volume: $VOLUME"
 docker run $FLAGS \
 	-v $VOLUME:/home/user/rr/data \
 	--net $NETWORK \
