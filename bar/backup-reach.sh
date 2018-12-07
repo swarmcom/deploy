@@ -14,4 +14,3 @@ docker run --rm  \
 	-v $STORAGE:/backup $HUB/bar \
 	 /bin/sh -c 'tar cfz "/backup/backup_$(date +"%Y%m%d%H%M").tar.gz" ./*'
 
-
