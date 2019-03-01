@@ -2,7 +2,7 @@
 USE_LE=${USE_LE:-""}
 DOMAIN=$1
 export NETWORK=${2:-"reach3"}
-export HUB=${3:-"reach3"}
+export HUB=${3:-"reachme3"}
 
 if [ -z $DOMAIN ]
 then
