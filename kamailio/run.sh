@@ -30,7 +30,7 @@ docker create $FLAGS $PORTMAP \
 	--env NAME=$NAME \
 	--env EXT_IP=$EXT_IP \
 	--env NODE=$NODE \
-	"$HUB/kamailio:REACH-59"
+	"$HUB/kamailio:REACH-61"
 
 docker network connect $NETWORK $NAME
 docker start $NAME
