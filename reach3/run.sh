@@ -7,7 +7,7 @@ KAMNODE=${KAMNODE:-"kamailio@kamailio.$NETWORK"}
 NODE=${NODE:-"reach@$NAME"}
 CFG_DB=${CFG_DB:-"`pwd`/db"}
 VOLUME=db-$NAME
-HUB=${HUB:-"reach3"}
+HUB=${HUB:-"reachme3"}
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
 then
@@ -53,4 +53,4 @@ docker run $FLAGS \
 	--env NODE=$NODE \
 	--env FSNODE=$FSNODE \
 	--env KAMNODE=$KAMNODE \
-	"$HUB/reach:REACH-61"
+	"$HUB/reach:REACH-71"

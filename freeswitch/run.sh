@@ -4,7 +4,7 @@ NETWORK=${NETWORK:-"reach3"}
 NAME=${NAME:-"freeswitch.$NETWORK"}
 REACH_NODE=${REACH_NODE:-"reach@reach.$NETWORK"}
 REACH_HOST=${REACH_HOST:-"http://reach.$NETWORK:8937"}
-HUB=${HUB:-"reach3"}
+HUB=${HUB:-"reachme3"}
 
 if [ -n "$(docker ps -aq -f name=$NAME)" ]
 then
