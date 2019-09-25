@@ -11,7 +11,7 @@ then
 fi
 
 echo Update images
-for IMAGE in reach3/reach:CSU $HUB/reach-ui nginx $HUB/kamailio $HUB/freeswitch $HUB/rr $HUB/timescale
+for IMAGE in reach3/reach:CSU $HUB/reach-ui nginx $HUB/kamailio reach3/freeswitch:CSU $HUB/rr $HUB/timescale
 do
 	docker pull $IMAGE
 done
