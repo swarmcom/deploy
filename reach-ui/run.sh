@@ -27,4 +27,4 @@ docker run $FLAGS \
 	--name $NAME \
 	--env NETWORK=$NETWORK \
 	--env REACH_WS=$REACH_WS \
-	$HUB/reach-ui
+	reach3/frontend:beta
